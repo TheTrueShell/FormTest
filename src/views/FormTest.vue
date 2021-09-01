@@ -39,7 +39,7 @@
       </tr>
     </v-simple-table>
     <br>
-    <apexchart :series="series" :options="chartOptions"></apexchart>
+    <apexchart :options="chartOptions" :series="series"></apexchart>
   </v-container>
 </template>
 
@@ -124,25 +124,25 @@ export default {
       console.log(this.data);
     },
 
-    getNames(){
+    getNames() {
       const names = [];
-      for (var dataPoint in this.data){
+      for (var dataPoint in this.data) {
         names.push(dataPoint.name)
       }
       return names;
     },
 
-    getPractice(){
+    getPractice() {
       const practices = [];
-      for (var dataPoint in this.data){
+      for (var dataPoint in this.data) {
         practices.push(dataPoint.practice)
       }
       return practices;
     },
 
-    getCompetitive(){
+    getCompetitive() {
       const competitives = [];
-      for (var dataPoint in this.data){
+      for (var dataPoint in this.data) {
         competitives.push(dataPoint.competitive)
       }
       return competitives;
