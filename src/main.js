@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
 import FormTest from './views/FormTest'
+import "@/plugins/apexcharts"
 
 Vue.component("FormTest", FormTest)
 
