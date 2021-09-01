@@ -61,29 +61,6 @@ export default {
     nameInput: "",
     practiceInput: "",
     competitiveInput: "",
-    series: [{
-      name: "Practice",
-      data: this.getPractice
-    },
-      {
-        name: "Competitive",
-        data: this.getCompetitive()
-      }],
-    chartOptions: {
-      chart: {
-        type: "bar",
-        stacked: true,
-        height: 350,
-      },
-      plotOptions: {
-        bar: {
-          horizontal: true
-        }
-      },
-      xaxis: {
-        categories: this.getNames
-      }
-    }
   }),
   created() {
     this.populateForm();
