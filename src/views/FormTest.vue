@@ -133,19 +133,19 @@ export default {
     },
 
     getPractice(){
-      const names = [];
+      const practices = [];
       for (var dataPoint in this.data){
-        names.push(dataPoint.practice)
+        practices.push(dataPoint.practice)
       }
-      return names;
+      return practices;
     },
 
     getCompetitive(){
-      const names = [];
+      const competitives = [];
       for (var dataPoint in this.data){
-        names.push(dataPoint.competitive)
+        competitives.push(dataPoint.competitive)
       }
-      return names;
+      return competitives;
     }
   }
 }
