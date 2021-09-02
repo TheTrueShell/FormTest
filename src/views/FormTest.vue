@@ -154,7 +154,7 @@ export default {
       const name = this.nameInput;
       const practice = this.practiceInput;
       const competitive = this.competitiveInput;
-      if ((name == "" || practice == "" || competitive == "")) {
+      if ((name === "" || practice === "" || competitive === "")) {
         console.log("Please complete the form.")
       } else if (!this.checkDuplicates(name)) {
         this.processDataForm(name, practice, competitive)
@@ -257,12 +257,12 @@ export default {
 
     //Returns an array of Practice and Competitive JS Objects
     updateChart() {
-      var stupidObject = {xaxis: {type: "category", categories: ["Test"]}};
+      var apexObject = {xaxis: {type: "category", categories: ["Test"]}};
       const chartPractice = {name: "Practice", data: this.getPractices()};
       const chartCompetitive = {name: "Competitive", data: this.getCompetitives()};
       const seriesOut = [chartPractice, chartCompetitive];
-      stupidObject.xaxis.categories = this.getNames();
-      this.chartOptions = stupidObject;
+      apexObject.xaxis.categories = this.getNames();
+      this.chartOptions = apexObject;
       this.series = seriesOut;
     }
   },
